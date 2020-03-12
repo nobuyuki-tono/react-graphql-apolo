@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { ApolloProvider } from "@apollo/react-hooks";
 import "./App.css";
 import Launches from "./components/Launches";
+import Launch from "./components/Launch";
 
 import logo from "./logo.png";
 
