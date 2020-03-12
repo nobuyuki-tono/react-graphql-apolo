@@ -2,6 +2,7 @@ import React from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import LaunchItem from "./LaunchItem";
+import MissionKey from "./MissionKey";
 
 const LAUNCHES_QUERY = gql`
   {
@@ -23,6 +24,7 @@ const Launches = () => {
   return (
     <>
       <h1 className="display-4 my-3">Launches</h1>
+      <MissionKey />
       {data.launches.map(launch => {
         return <LaunchItem key={launch.flight_number} launch={launch} />;
       })}
